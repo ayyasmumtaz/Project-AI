@@ -124,7 +124,7 @@ class And(Sentence):
         if len(self.conjuncts) == 1:
             return self.conjuncts[0].formula()
         return " ∧ ".join([Sentence.parenthesize(conjunct.formula())
-                           for conjunct in self.conjuncts])
+                    for conjunct in self.conjuncts])
 
     def symbols(self):
         return set.union(*[conjunct.symbols() for conjunct in self.conjuncts])
@@ -212,7 +212,7 @@ class Biconditional(Sentence):
 
     def evaluate(self, model):
         return ((self.left.evaluate(model)
-                 and self.right.evaluate(model))
+                and self.right.evaluate(model))
                 or (not self.left.evaluate(model)
                     and not self.right.evaluate(model)))
 
