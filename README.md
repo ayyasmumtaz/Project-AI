@@ -1,6 +1,5 @@
 # AI Project - Knights and Knave
 
-
 ## Task:
 
 Write a Model Checking algorithm to solve 'knights and knaves' logic puzzles.
